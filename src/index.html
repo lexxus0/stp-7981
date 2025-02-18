@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./scss/styles.scss" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./public/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arc8</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- font end -->
+  <link rel="stylesheet" href="./scss/styles.scss" />
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+</head>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+<body>
+  <load src="/partials/header.html" />
+  <main>
+    <load src="partials/hero.html" />
+    <load src="partials/game-description.html" />
+    <load src="partials/advantages.html" />
+    <load src="partials/reviews.html" />
+    <load src="partials/how-to-play.html" />
+    <load src="partials/join-community.html" />
+    <load src="partials/cookies.html" />
+  </main>
+  <load src="partials/footer.html" />
+  <script type="module" src="./main.js"></script>
+</body>
 
-    <script type="module" src="./main.js"></script>
-  </body>
 </html>
