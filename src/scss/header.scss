@@ -1,0 +1,132 @@
+.header {
+  position: sticky;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+.container.header-container {
+  position: relative;
+}
+.header-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+}
+.header-menu {
+  display: none;
+}
+.burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.burger-icon {
+  width: 36px;
+  height: 36px;
+}
+.menu-window {
+  border-radius: 12px 0 0 12px;
+  width: 195px;
+  height: 388px;
+  padding: 74px 16px 74px 24px;
+  background-color: var(--stroke);
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  transition: transform var(--animation), opacity var(--animation),
+    visibility var(--animation);
+}
+.menu-window.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.menu-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.icon-close {
+  fill: var(--white);
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.mobile-menu-item {
+  font-weight: 600;
+  line-height: 2;
+  color: var(--white);
+}
+.mobile-menu-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: color var(--animation);
+}
+.mobile-menu-link:hover {
+  color: var(--hover);
+}
+.mobile-menu-link:active,
+.mobile-menu-link:focus {
+  color: var(--click);
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header-logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+  }
+  .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 28px;
+  }
+  .header-menu-item {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: var(--white);
+  }
+  .header-menu-link {
+    color: var(--white);
+    transition: color var(--animation);
+  }
+  .header-menu-link:hover {
+    color: var(--hover);
+  }
+  .header-menu-link:active,
+  .header-menu-link:focus {
+    color: var(--click);
+  }
+  .burger-btn {
+    display: none;
+  }
+}
