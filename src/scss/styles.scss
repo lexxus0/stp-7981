@@ -31,11 +31,9 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 32px;
+  font: 700 32px 'Exo 2', sans-serif;
   @media screen and (min-width: 1200px) {
-    font-size: 72px;
-    line-height: 119%;
+    font: 700 72px / 119% 'Exo 2', sans-serif;
   }
 }
 

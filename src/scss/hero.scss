@@ -1,0 +1,108 @@
+.hero {
+  margin-bottom: 44px !important;
+  border-radius: 0 0 12px 12px;
+  @media screen and (min-width: 1200px) {
+    background: #631895;
+
+    position: relative;
+    padding-top: 153px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+.hero > h1 {
+  padding-right: 35px;
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
+    width: 560px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.hero > p {
+  font: 400 20px 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.hero > picture > img {
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
+.hero > picture {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 0;
+    top: 36px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero > div a {
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 65px;
+  background: #ef8908;
+  font: 600 16px 'Open Sans', sans-serif;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    font-size: 32px;
+    margin-bottom: 174px;
+    width: 323px;
+  }
+}
+
+.hero > div > a img {
+  width: 25px;
+  height: 25px;
+  @media screen and (min-width: 1200px) {
+    width: 37px;
+    height: 40px;
+  }
+}
+
+.hero > a:hover {
+  background: #ff8e00;
+}
+
+.hero > a:active {
+  background: #e17d00;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero > picture {
+    display: flex;
+    justify-content: center;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+
+  .hero > picture img {
+    width: 320px;
+    height: auto;
+    display: block;
+  }
+}
