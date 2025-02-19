@@ -27,6 +27,30 @@
 
 body {
   background: #280552;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 119%;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+  }
+}
+
+p {
+  color: #e0e0e0;
 }
 
 .container {
