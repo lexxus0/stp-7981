@@ -1,0 +1,30 @@
+.game-description {
+  margin-bottom: 68px;
+}
+.game-description-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.game-description-text {
+  width: 276px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--body-txt);
+  margin-bottom: 36px;
+}
+.game-description-box {
+  border: 4px solid var(--stroke);
+  border-radius: 12px;
+  width: 288px;
+  height: 601px;
+  margin-bottom: 44px;
+}
+.game-description-box.last {
+  margin-bottom: 0;
+}
+.game-description-picture {
+  width: 100%;
+  height: 100%;
+}
