@@ -2,21 +2,19 @@
   margin-bottom: 68px;
 }
 .game-description-title {
+  font-family: var(--second-family);
   font-weight: 700;
   font-size: 24px;
   color: var(--white);
   margin-bottom: 12px;
 }
 .game-description-text {
+  font-family: var(--font-family);
   width: 276px;
-  font-weight: 400;
-  font-size: 16px;
   color: var(--body-txt);
   margin-bottom: 36px;
 }
 .game-description-box {
-  border: 4px solid var(--stroke);
-  border-radius: 12px;
   width: 288px;
   height: 601px;
   margin-bottom: 44px;
@@ -27,4 +25,59 @@
 .game-description-picture {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .game-description {
+    margin-bottom: 103px;
+  }
+  .game-description-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .game-description-muzzle-1 {
+    position: absolute;
+    left: 97px;
+    bottom: 54px;
+  }
+  .game-description-muzzle-2 {
+    position: absolute;
+    right: 107px;
+    top: 39px;
+  }
+  .game-description-muzzle-3 {
+    position: absolute;
+    left: 104px;
+    top: 68px;
+  }
+  .game-description-muzzle-4 {
+    position: absolute;
+    right: 447px;
+    bottom: 38px;
+  }
+  .game-description-wrapper.reverse {
+    flex-direction: row-reverse;
+  }
+  .game-description-title {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 52px;
+  }
+  .game-description-text {
+    width: 652px;
+    font-size: 24px;
+    line-height: 1.3333;
+    margin-bottom: 0;
+  }
+  .game-description-box {
+    width: 340px;
+    height: 709px;
+    margin-bottom: 32px;
+  }
+  .game-description-picture {
+    width: 340px;
+    height: 709px;
+  }
 }
