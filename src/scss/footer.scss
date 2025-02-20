@@ -1,0 +1,68 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer > img {
+  border-radius: 12px;
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    width: 114px;
+    height: 114px;
+  }
+}
+
+.footer > h4 {
+  font: 700 24px 'Exo 2', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font: 700 36px / 122% 'Exo 2', sans-serif;
+    margin-bottom: 8px;
+  }
+}
+
+.footer > div {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    gap: 272px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer > div > a {
+  cursor: pointer;
+  font: 400 12px 'Open Sans', sans-serif;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #e0e0e0;
+  transition: color var(--animation);
+  @media screen and (min-width: 1200px) {
+    font: 400 24px / 133% 'Open Sans', sans-serif;
+    text-decoration: none;
+  }
+}
+
+.footer > div > a:hover {
+  color: var(--hover);
+}
+
+.footer > div > a:active,
+.footer > div > a:focus {
+  color: var(--click);
+}
+
+.footer > p {
+  font: 400 14px 'Open Sans', sans-serif;
+  text-align: center;
+  padding-bottom: 46px;
+  @media screen and (min-width: 1200px) {
+    font: 400 24px / 133% 'Open Sans', sans-serif;
+    padding-bottom: 52px;
+  }
+}
