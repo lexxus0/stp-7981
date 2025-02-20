@@ -1,7 +1,11 @@
 .header {
-  position: sticky;
   padding: 24px 0;
   margin: 0 auto;
+  background-color: var(--bg-main-bg);
+  position: sticky;
+  top: 0;
+  height: 90px;
+  z-index: 999;
 }
 .container.header-container {
   position: relative;
@@ -69,7 +73,10 @@
   padding: 0;
 }
 .icon-close {
-  fill: var(--white);
+  transition: transform var(--animation);
+}
+.icon-close:hover {
+  transform: rotate(90deg);
 }
 .mobile-menu {
   display: flex;
@@ -77,6 +84,7 @@
   row-gap: 20px;
 }
 .mobile-menu-item {
+  font-family: var(--font-family);
   font-weight: 600;
   line-height: 2;
   color: var(--white);
@@ -97,6 +105,7 @@
 @media screen and (min-width: 1200px) {
   .header {
     padding: 20px 0;
+    height: 105px;
   }
   .header-logo {
     width: 65px;
@@ -110,6 +119,7 @@
     column-gap: 28px;
   }
   .header-menu-item {
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 24px;
     line-height: 1.33333;
