@@ -32,15 +32,15 @@
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-  width: 288px;
-  height: 293px !important;
+  width: 245px !important;
+  height: 232px !important;
   background: #631895;
-  padding: 24px;
+  padding: 18px;
   @media screen and (min-width: 1200px) {
     border-radius: 8px;
     // width: auto !important;
-    width: 536px !important;
-    height: 454px !important;
+    width: 480px !important;
+    height: 405px !important;
     padding: 32px 24px;
   }
 }
@@ -94,5 +94,11 @@
     font-size: 20px;
     line-height: 1.4;
     width: 488px;
+  }
+}
+
+.reviews-pagination-wrapper {
+  @media screen and (min-width: 1200px) {
+    gap: 160px;
   }
 }
