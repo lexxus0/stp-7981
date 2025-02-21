@@ -6,6 +6,7 @@
   top: 0;
   height: 90px;
   z-index: 999;
+  margin-bottom: 36px;
 }
 .container.header-container {
   position: relative;
@@ -106,6 +107,7 @@
   .header {
     padding: 20px 0;
     height: 105px;
+    margin-bottom: 0;
   }
   .header-logo {
     width: 65px;

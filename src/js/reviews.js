@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Grid } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import 'swiper/css/grid';
+import 'swiper/css/grid';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Grid]);
 
 const swiper = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
@@ -25,7 +25,6 @@ const swiper = new Swiper('.reviews-swiper', {
   breakpoints: {
     1200: {
       slidesPerView: 1,
-      slidesPerGroup: 1,
       // spaceBetween: 24,
       grid: {
         rows: 2,
