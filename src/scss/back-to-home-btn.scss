@@ -1,0 +1,33 @@
+.home_btn {
+  margin-top: 24px !important;
+  margin-bottom: 36px !important;
+  @media screen and (min-width: 1200px) {
+    margin-top: 56px !important;
+    margin-bottom: 64px !important;
+  }
+}
+
+.home_btn > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+  }
+}
+
+.home_btn > div > p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.back_btn > a > img {
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 52px;
+  }
+}

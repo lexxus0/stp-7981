@@ -3,10 +3,10 @@ const menuWindow = document.querySelector('.menu-window');
 const menuCloseBtn = document.querySelector('.menu-close-btn');
 
 function openMenu() {
-    menuWindow.classList.add("is-open");
+  menuWindow.classList.add('is-open');
 }
 function closeMenu() {
-    menuWindow.classList.remove("is-open");
+  menuWindow.classList.remove('is-open');
 }
 function toggleMenu() {
   menuWindow.classList.toggle('is-open');
@@ -24,6 +24,12 @@ document.addEventListener('keydown', e => {
 document.addEventListener('click', e => {
   const click = e.composedPath().includes(menuWindow);
   if (click) {
+    closeMenu();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1200) {
     closeMenu();
   }
 });

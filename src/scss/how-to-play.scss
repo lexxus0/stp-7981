@@ -15,18 +15,27 @@
   height: 40px;
   border-radius: 8px;
   background: #ef8908;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1200px) {
     width: 80px;
     height: 80px;
   }
 }
 
-.play_heading > div > svg {
+.play_heading > div:hover {
+  background: #ff8e00;
+}
+.play_heading > div:active,
+.play_heading > div:focus {
+  background: #e17d00;
+}
+
+.play_heading > div > img {
   width: 21px;
-  height: 42px;
+  height: 10px;
   @media screen and (min-width: 1200px) {
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 32px;
   }
 }
 

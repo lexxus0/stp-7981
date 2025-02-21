@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.querySelector('.play_heading div');
-  const arrowIcon = toggleBtn.querySelector('svg');
+  const arrowIcon = toggleBtn.querySelector('#bottom');
   const cards = document.querySelectorAll('.card_item');
 
   let isOpen = false;

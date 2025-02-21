@@ -50,7 +50,7 @@
   }
 }
 
-.swiper-slide svg {
+.swiper-slide > img {
   flex-shrink: 0;
   margin: auto;
   @media screen and (min-width: 1200px) {
@@ -115,14 +115,28 @@
   height: 40px;
   border-radius: 8px;
   background: #ef8908;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 1200px) {
     width: 70px;
     height: 70px;
   }
 }
 
-.swiper-button-prev > svg,
-.swiper-button-next > svg {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ff8e00;
+}
+
+.swiper-button-prev:active,
+.swiper-button-prev:focus,
+.swiper-button-next:active,
+.swiper-button-next:focus {
+  background: #e17d00;
+}
+
+.swiper-button-prev > img,
+.swiper-button-next > img {
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 52px;

@@ -41,20 +41,23 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #e0e0e0;
-  transition: color var(--animation);
   @media screen and (min-width: 1200px) {
     font: 400 24px / 133% 'Open Sans', sans-serif;
     text-decoration: none;
   }
 }
 
-.footer > div > a:hover {
-  color: var(--hover);
+.footer > div > a > p {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer > div > a:active,
+.footer > div > a > p:hover {
+  color: #d8b4ff;
+}
+
+.footer > div > a > p:active,
 .footer > div > a:focus {
-  color: var(--click);
+  color: #c48efe;
 }
 
 .footer > p {
