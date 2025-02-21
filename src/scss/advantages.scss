@@ -26,6 +26,9 @@
 
 .advantages > h2 {
   margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
 }
 
 .swiper-slide {
