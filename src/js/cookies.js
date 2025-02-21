@@ -1,8 +1,10 @@
-const cookiesBtn = document.querySelector('.cookies-popup-btn');
-const menuWindow = document.querySelector('.menu-window');
+const cookiesAcceptBtn = document.querySelector('.accept');
+const cookiesDeclineBtn = document.querySelector('.decline');
+const cookiesWindow = document.querySelector('.cookies');
 
 function closeCookiesWindow() {
-  menuWindow.classList.remove('active');
+  cookiesWindow.classList.add('closed');
 }
 
-cookiesBtn.addEventListener('click', closeCookiesWindow);
+cookiesAcceptBtn.addEventListener('click', closeCookiesWindow);
+cookiesDeclineBtn.addEventListener('click', closeCookiesWindow);

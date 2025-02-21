@@ -1,5 +1,10 @@
+.closed {
+  display: none;
+}
 .cookies {
   position: relative;
+  // transform: translateY(-100%);
+  // transition: transform var(--animation);
 }
 .container.cookies-popup {
   position: fixed;
@@ -8,8 +13,11 @@
   left: 16px;
   z-index: 1000;
   background-color: var(--bg-main-bg);
+  border: 2px solid var(--stroke);
+  border-radius: 12px;
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+
     padding: 27px 52px 97px;
   }
 }
