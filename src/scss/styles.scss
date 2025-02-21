@@ -30,6 +30,7 @@
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--bg-main-bg);
   background: #280552;
   color: #fff;
@@ -50,6 +51,12 @@ h2 {
     font-size: 60px;
     line-height: 120%;
   }
+}
+
+li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 p {

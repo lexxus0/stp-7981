@@ -1,0 +1,119 @@
+.additional-page {
+  margin-bottom: 64px !important;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 104px !important;
+  }
+}
+
+.additional-page > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
+  }
+}
+
+.additional-page > div > ul {
+  list-style-type: disc;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+  }
+}
+
+.additional-page > div > ul > li > a {
+  text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    text-decoration: none;
+  }
+}
+
+.additional-page > div > ul > li {
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.additional-page > div > h1 {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 24px;
+  }
+}
+.additional-page > div > h5 {
+  margin-bottom: 8px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 122%;
+  }
+}
+.additional-page > div > h2 {
+  margin-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 122% !important;
+    margin-bottom: 20px;
+  }
+}
+
+.additional-page > div > h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0;
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.additional-page > div > h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #e0e0e0;
+  @media screen and (min-width: 1200px) {
+    line-height: 133%;
+  }
+}
+
+.additional-page > div > h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #e0e0e0;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 137%;
+  }
+}
+
+.additional-page > div > p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #e0e0e0;
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.additional-page > div > p > a {
+  text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    text-decoration: none;
+  }
+}
