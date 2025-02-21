@@ -47,7 +47,7 @@
   }
 }
 
-.swiper-slide svg {
+.swiper-slide > img {
   flex-shrink: 0;
   margin: auto;
   @media screen and (min-width: 1200px) {
@@ -118,8 +118,8 @@
   }
 }
 
-.swiper-button-prev > svg,
-.swiper-button-next > svg {
+.swiper-button-prev > img,
+.swiper-button-next > img {
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 52px;
