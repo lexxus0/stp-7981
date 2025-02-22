@@ -6,7 +6,7 @@ import 'swiper/css/grid';
 
 Swiper.use([Navigation, Pagination, Grid]);
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper_adv', {
   direction: 'horizontal',
   loop: false,
   slidesPerView: 1,

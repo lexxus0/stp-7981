@@ -10,7 +10,7 @@ const swiper = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
   loop: false,
   slidesPerView: 1,
-  // spaceBetween: 8,
+  spaceBetween: 8,
 
   pagination: {
     el: '.swiper-pagination',
