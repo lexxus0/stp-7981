@@ -1,0 +1,36 @@
+.up-button {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .up-button {
+    display: flex;
+
+    position: fixed;
+    bottom: 48px;
+    right: 24px;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+
+    transform: rotate(180deg);
+    transition: var(--animation);
+    background-color: transparent;
+  }
+  .up-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.up-button:hover {
+  border-color: var(--stroke);
+}
+
+.up-button.is-hidden {
+  display: none;
+}
