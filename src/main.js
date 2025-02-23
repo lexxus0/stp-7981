@@ -1,9 +1,5 @@
 import * as advantages from './js/advantages.js';
-import * as footer from './js/footer.js';
-import * as gameDescription from './js/game-description.js';
 import * as header from './js/header.js';
-import * as hero from './js/hero.js';
 import * as howToPlay from './js/how-to-play.js';
-import * as joinCommunity from './js/join-community.js';
 import * as reviews from './js/reviews.js';
 import * as cookies from './js/cookies.js';
