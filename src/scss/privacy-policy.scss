@@ -41,11 +41,13 @@
   }
 }
 
-.additional-page > div > h1 {
+.additional-heading {
+  margin-bottom: 16px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 24px;
   }
 }
+
 .additional-page > div > h5 {
   margin-bottom: 8px;
   font-family: 'Exo 2', sans-serif;
