@@ -43,7 +43,7 @@
 .cookies-popup-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 20px;
   padding-top: 16px;
   padding-bottom: 24px;
   @media screen and (min-width: 1200px) {
@@ -58,10 +58,7 @@
 .cookies-popup-text {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
-  @media screen and (min-width: 1200px) {
-    row-gap: 20px;
-  }
+  row-gap: 8px;
 }
 
 .cookies-popup-title {
@@ -70,8 +67,8 @@
   font-size: 24px;
   color: var(--white);
   @media screen and (min-width: 1200px) {
-    font-size: 60px;
-    line-height: 1.2;
+    font-size: 48px;
+    line-height: 1.5;
   }
 }
 
@@ -127,14 +124,16 @@
 
 .cookies-popup-btn.accept:hover,
 .cookies-popup-btn.accept:focus {
-  // background-color: var(--white);
-  // color: var(--btns-slider);
   background-color: #ff8e00;
-  border: 1px solid var(--white);
+}
+.cookies-popup-btn.accept:active {
+  background-color: #e17d00;
 }
 
 .cookies-popup-btn.decline:hover,
 .cookies-popup-btn.decline:focus {
-  border-color: var(--white);
-  color: var(--btns-slider);
+  border-color: #ff8e00;
+}
+.cookies-popup-btn.decline:active {
+  border-color: #e17d00;
 }
