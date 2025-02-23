@@ -1,10 +1,16 @@
-const cookiesAcceptBtn = document.querySelector('.accept');
-const cookiesDeclineBtn = document.querySelector('.decline');
-const cookiesWindow = document.querySelector('.cookies');
+document.addEventListener("DOMContentLoaded", () => {
+    const cookiesWindow = document.querySelector('.cookies-popup');
+    const overlay = document.querySelector(".overlay");
 
-function closeCookiesWindow() {
-  cookiesWindow.classList.add('closed');
-}
+    setTimeout(() => {
+      cookiesWindow.classList.add("show-cookies-popup");
+      overlay.classList.add("show-overlay");
+    }, 1000);
 
-cookiesAcceptBtn.addEventListener('click', closeCookiesWindow);
-cookiesDeclineBtn.addEventListener('click', closeCookiesWindow);
+    document.querySelectorAll(".decline, .accept").forEach((button) => {
+      button.addEventListener("click", () => {
+        cookiesWindow.classList.remove('show-cookies-popup');
+        overlay.classList.remove("show-overlay");
+      });
+    });
+});

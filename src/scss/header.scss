@@ -1,12 +1,12 @@
 .header {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 36px;
   margin: 0 auto;
   background-color: var(--bg-main-bg);
   position: sticky;
   top: 0;
-  height: 90px;
-  z-index: 999;
-  margin-bottom: 36px;
+  height: 102px;
+  z-index: 100;
 }
 .container.header-container {
   position: relative;
@@ -20,6 +20,10 @@
   width: 42px;
   height: 42px;
   border-radius: 8px;
+  transition: scale var(--animation);
+}
+.header-logo:hover {
+  scale: 1.05;
 }
 .header-menu {
   display: none;
@@ -107,7 +111,6 @@
   .header {
     padding: 20px 0;
     height: 105px;
-    margin-bottom: 0;
     max-width: 1200px;
     border-bottom: 2px solid var(--stroke);
   }

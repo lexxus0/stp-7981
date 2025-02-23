@@ -33,7 +33,6 @@
 .game-description-muzzle-4 {
   display: none;
 }
-
 @media screen and (min-width: 1200px) {
   .game-description {
     margin-bottom: 103px;
@@ -50,6 +49,7 @@
   .game-description-muzzle-4 {
     display: block;
     position: absolute;
+    transition: scale var(--animation), transform 0.6s ease-in-out;
   }
   .game-description-muzzle-1 {
     left: 97px;
@@ -66,6 +66,13 @@
   .game-description-muzzle-4 {
     right: 447px;
     bottom: 38px;
+  }
+  .game-description-muzzle-1:hover,
+  .game-description-muzzle-2:hover,
+  .game-description-muzzle-3:hover,
+  .game-description-muzzle-4:hover {
+    scale: 1.1;
+    transform: rotate(360deg);
   }
   .game-description-wrapper.reverse {
     flex-direction: row-reverse;
