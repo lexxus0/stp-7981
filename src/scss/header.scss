@@ -1,15 +1,12 @@
 .header {
   padding-top: 24px;
   padding-bottom: 36px;
-  margin: 0 auto;
   background-color: var(--bg-main-bg);
-  position: sticky;
-  top: 0;
+  position: fixed;
+  right: 50%;
+  transform: translateX(50%);
   height: 102px;
   z-index: 100;
-}
-.container.header-container {
-  position: relative;
 }
 .header-nav-bar {
   display: flex;
