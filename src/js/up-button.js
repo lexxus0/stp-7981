@@ -4,7 +4,7 @@ const upBtn = document.querySelector('.up-button');
 
 function checkScroll() {
   const scroll = window.scrollY;
-  if (scroll >= 700) {
+  if (scroll >= 600) {
     upBtn.classList.remove('is-hidden');
   } else {
     upBtn.classList.add('is-hidden');
